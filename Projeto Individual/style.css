@@ -369,33 +369,42 @@ footer {
     color: var(--branco);
 }
 
-#cadastro .cadastro-container {
-    height: 70%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 #cadastro a {
     text-decoration: none;
     color: var(--branco);
     font-weight: 500;
 }
 
-#cadastro .cadastro-container h1 {
-    color: var(--roxoClaro) ;
+#cadastro .cadastro-container {
+    height: 70%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 2px solid var(--roxo);
+    border-radius: 6px;
+    box-shadow: 0 0 15px var(--roxoClaro);
+    padding: 10px 0 0 0;
+    /* background: var(--preto); */
+}
+
+#cadastro .cadastro-container img {
+    height: 100%;
+    width: 50%;
+    border-radius: 0 5px 5px 0;
+}
+
+#cadastro .cadastro-container h2 {
+    color: var(--) ;
 }
 
 #cadastro .cadastro-container button {
-     margin: 0 0 10px 0;
     background: transparent;
     color: var(--branco);
     border: 2px solid var(--branco);
     border-radius: 10px;
-    height: 40px;
-    width: 200px;
+    height: 30px;
+    width: 180px;
 
 }
 
@@ -409,16 +418,13 @@ footer {
 
 
 #cadastro .cadastro-container .box-cadastro {
-    height:90%;
+    height:100%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
    
-}
-#cadastro .cadastro-container .box-cadastro label{
-    margin: 10px 0;
 }
 
 #cadastro .cadastro-container .box-cadastro input {
