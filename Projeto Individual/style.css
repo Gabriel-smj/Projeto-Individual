@@ -25,12 +25,16 @@ body {
     color: var(--roxoClaro);
 }
 
+.agora {
+    font-weight: 800;
+}
+
 /*||||||||||||||||||||||||||||| MENU |||||||||||||||||||||||||||||||*/
 
 .menu {
     background: linear-gradient(to right bottom, var(--azulMarinho), var(--roxo));
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -319,7 +323,7 @@ form button {
 footer {
     height: 50px;
     width: 100%;
-    background: var(--azulMarinho);
+    background: linear-gradient(to top right, var(--azulEscuro), var(--azulEscuro));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -360,9 +364,69 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background: linear-gradient(to right bottom, var(--preto), var(--azulEscuro));
+    color: var(--branco);
 }
 
+#cadastro .cadastro-container {
+    height: 70%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cadastro a {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 500;
+}
+
+#cadastro .cadastro-container h1 {
+    color: var(--roxoClaro) ;
+}
+
+#cadastro .cadastro-container button {
+     margin: 0 0 10px 0;
+    background: transparent;
+    color: var(--branco);
+    border: 2px solid var(--branco);
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+
+}
+
+#cadastro .cadastro-container button:hover {
+    background: linear-gradient(to left bottom, var(--roxo), var(--roxoClaro));
+    cursor: pointer;
+    font-weight: 600;
+    border: 3px solid linear-gradient(to left bottom, var(--roxo), var(--roxoClaro));
+    font-size: 14px;
+}
+
+
+#cadastro .cadastro-container .box-cadastro {
+    height:90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+#cadastro .cadastro-container .box-cadastro label{
+    margin: 10px 0;
+}
+
+#cadastro .cadastro-container .box-cadastro input {
+    width: 300px;
+    height: 27px;
+    border-radius: 5px;
+    padding: 0 0 0 6px;
+}
 
 
 

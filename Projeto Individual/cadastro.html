@@ -19,13 +19,42 @@
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="login.html">BIOGRAFIA</a></li>
-            <li><a href="#">CADASTRO</a></li>
+            <li class="agora"><a href="#">CADASTRO</a></li>
             <li><a href="login.html">LOGIN</a></li>
         </ul>
     </nav>
-
     <section id="cadastro">
         <div class="cadastro-container">
-            
+            <h1>CADASTRE-SE</h1>
+            <div class="box-cadastro">
+                <label>
+                    <span>Nome:</span> <br>
+                    <input type="text" id="input_nome" placeholder="  Digite seu nome...">
+                </label>
+                <label>
+                    <span>Sobrenome:</span> <br>
+                    <input type="text" id="input_sobrenome" placeholder="  Digite seu sobrenome...">
+                </label> 
+                <label>
+                    <span>E-mail:</span> <br>
+                    <input type="text" id="input_email" placeholder="  Digite seu email...">
+                </label>  
+                <label>
+                    <span>Senha:</span> <br>
+                    <input type="text" id="input_senha" placeholder="  Digite uma senha...">
+                </label>  
+                <label>
+                    <span>Confirme a Senha:</span> <br>
+                    <input type="text" id="input_confirmacao_senha" placeholder="  Confirme sua senha...">
+                </label>  
+            </div>
+
+            <button onclick="cadastro()">Confirmar</button>
+
         </div>
+        <p>Já tem cadastro, click em <a href="login.html">Entrar</a></p>
     </section>
+    
+    <footer>
+        <p>Frequecy Culture &copy; Todos os direitos reservados</p>
+    </footer>
