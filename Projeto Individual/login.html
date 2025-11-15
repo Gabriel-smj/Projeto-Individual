@@ -27,18 +27,21 @@
     <section id="login">
         <div class="login-container">
             <div class="box-login">
+
                 <h1>LOGIN</h1>
-                <label>
-                    <span>Nome:</span> <br>
-                    <input type="text" id="input_nome">
-                </label> <br> <br>
+
                 <label>
                     <span>E-mail:</span> <br>
-                    <input type="text" id="input_email">
-                </label> <br> <br>
-
+                    <input type="text" id="input_email" placeholder=" Digite seu email...">
+                </label> 
+                <label>
+                    <span>Senha:</span> <br>
+                    <input type="text" id="input_senha" placeholder=" Digite sua senha...">
+                </label> 
+                
                 <button onclick="login()">Entrar</button>
-                <p>Não tem cadastro, <a href="cadastro.html">Cadastre-se</a></p>
+
+                <p>Não tem cadastro, <a href="cadastro.html">Cadastre-se</a></p> 
             </div>
             <img src="assets/img/ChatGPT Image Nov 14, 2025, 01_20_07 AM.png" alt="">
         </div>
@@ -56,8 +59,8 @@
     function entrar() {
         aguardar();
 
-        var emailVar = email_input.value;
-        var senhaVar = senha_input.value;
+        var emailVar = input_email.value;
+        var senhaVar = input_senha.value;
 
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
@@ -65,9 +68,9 @@
             finalizarAguardar();
             return false;
         }
-        else {
-            setInterval(sumirMensagem, 5000)
-        }
+        // else {
+        //     setInterval(sumirMensagem, 5000)
+        // }
 
         console.log("FORM LOGIN: ", emailVar);
         console.log("FORM SENHA: ", senhaVar);
@@ -93,7 +96,7 @@
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.nome;
                     sessionStorage.ID_USUARIO = json.id;
-                    sessionStorage.AQUARIOS = JSON.stringify(json.aquarios)
+                    // sessionStorage.AQUARIOS = JSON.stringify(json.aquarios)
 
                     setTimeout(function () {
                         window.location = "./dashboard/cards.html";
@@ -118,8 +121,8 @@
         return false;
     }
 
-    function sumirMensagem() {
-        cardErro.style.display = "none"
-    }
+    // function sumirMensagem() {
+    //     cardErro.style.display = "none"
+    // }
 
 </script>
